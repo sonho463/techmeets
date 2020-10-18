@@ -1,25 +1,29 @@
-@charset "UTF-8";
+$main-color: #ED7133;
+$dark-letter: #000000;
+$pale-letter: #ffffff;
+
 body {
   width: 100%;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
   font-size: 14px;
+  // background-color: aquamarine;
 }
 
+
 /* --------------------------------------------- */
+
 /* ヘッダー */
+
 /* --------------------------------------------- */
+
 header {
+  // width: 100vw;
   z-index: 1;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: $pale-letter;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: blue;
   padding: 1.5rem 8vw;
   position: fixed;
   left: 0;
@@ -29,11 +33,13 @@ header {
 .header__logo {
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
+  // padding: 1rem
 }
+
 
 .humberger {
   font-size: 2.5rem;
-  background-color: #ED7133;
+  background-color: $main-color;
   padding: 1rem;
   border-radius: 50%;
 }
@@ -45,42 +51,56 @@ header {
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
+@media (min-width: 768px) {
+
+}
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media (min-width: 1024px) {
   .header__wrapper-right {
     display: none;
+
+    &_pc {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-  .header__wrapper-right_pc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+
   .header__child {
     font-size: 1.2rem;
     padding: 0.8rem;
+    a {
+      color: $pale-letter;
+    }
+
   }
-  .header__child a {
-    color: #ffffff;
-  }
+
   .button {
-    background-color: #ED7133;
+    background-color: $main-color;
     margin-left: 1rem;
-    padding: 1rem;
+    padding: 1rem ;
   }
+
 }
+  
 
 /* --------------------------------------------- */
+
 /* トップ */
+
 /* --------------------------------------------- */
-.top {
-  position: relative;
-  width: 100%;
-}
+
+main {
+  // background-image: url(../img/top.jpg);
+  // background-position: center;
+  // height: 500px;
+  }
+
+  .top {
+    position: relative;
+    width: 100%;
+  }
 
 .top__bg {
   width: 100%;
@@ -88,21 +108,28 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 40rem;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
-  color: #ffffff;
+  filter: brightness(0.5);
+  color: $pale-letter;
 }
 
 .top__title-wrapper {
   position: absolute;
   text-align: center;
   top: 50%;
-  left: 0;
-  right: 0;
+  left:0;
+  right:0;
   margin-right: auto;
   margin-left: auto;
   color: #ffffff;
 }
+
+// .top__title-wrapper {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateY(-50%) translateX(-50%);
+//   color: #ffffff;
+// }
 
 .top__title {
   font-size: 2rem;
@@ -115,10 +142,38 @@ header {
   opacity: 0.6;
 }
 
+
+
+
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
+@media (min-width: 768px) {
+  
+}
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 1024px) {
+  
+}
+
+
+/* --------------------------------------------- */
+
+/* WHAT IS "TECHMEETS"? */
+
+/* --------------------------------------------- */
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+  
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  画像だけ右寄せにする？
+}

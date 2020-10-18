@@ -1,0 +1,80 @@
+/* --------------------------------------------- */
+
+/* トップ */
+
+/* --------------------------------------------- */
+
+main {
+  // background-image: url(../img/top.jpg);
+  // background-position: center;
+  // height: 500px;
+  }
+
+.top {
+  position: relative;
+  width: 100%;
+}
+
+.top__bg {
+  width: 100%;
+  background-image: url(../img/top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  filter: brightness(0.5);
+  color: $pale-letter;
+}
+
+.top__title-wrapper {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left:0;
+  right:0;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffffff;
+}
+
+// .top__title-wrapper {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateY(-50%) translateX(-50%);
+//   color: #ffffff;
+// }
+
+.top__title {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.1em;
+}
+
+.top__sub-title {
+  margin-top: 1.5rem;
+  opacity: 0.6;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+  font-size: 2.5rem;
+
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  .top__title {
+    font-size: 2.5rem;
+  }
+
+  .top__sub-title {
+    font-size: 1rem;
+  }
+
+}
