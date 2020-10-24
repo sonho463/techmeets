@@ -3,6 +3,78 @@
 /* WHAT IS "TECHMEETS"? */
 
 /* --------------------------------------------- */
+.what {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  padding-top: 2rem;
+  // height: 2000px;
+}
+
+.what__title {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+.what__img {
+  width: 18rem;
+}
+
+.what__lead-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  // background-color: $main-color;
+  color: $dark-letter;
+}
+
+.what__line-wrapper {
+  display: flex;
+
+}
+
+.what__d-line {
+  // background-color: #fff;
+  background-image: linear-gradient(45deg, transparent 44%, #333 44%, #333 48%, transparent 48%);
+  width: 10px;
+  height: 27px;
+}
+
+.what__h-line {
+  // background-color:#333;
+  left: 5%;
+  background-image: linear-gradient(180deg, transparent 39%, #333 39%, #333 41%, transparent 41%);
+  width: 30px;
+  height: 50px;
+}
+
+.what__lead-text {
+  width: 15rem;
+  line-height: 1.2rem;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.what__content {
+  padding: 2rem 2.5rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  &_PC {
+    display: none;
+  }
+
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+background-color: black;}
 
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
@@ -14,5 +86,54 @@
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media (min-width: 1024px) {
-  // 画像だけ右寄せにする？
+
+  .what {
+    width: 100%;
+    // padding: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+  .what__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .what__first-block {
+    width: 30rem;
+    padding-bottom: 5rem;
+    // vertical-align: top;
+    // display: flex;
+    // flex-direction: row;
+    // align-self: flex-start;
+    // margin-right: auto;
+  } 
+
+
+  // .what__lead-wrapper {
+  //  }
+
+  .what__lead-text {
+    width: 25rem;
+  }
+
+  .what__content{
+    display: none;
+    &_PC{
+      display: block;
+      padding: 0.3rem 3rem;
+      width: 25rem;
+    }
+  }
+
+  .what__img {
+    width: 350px;
+  }
+
+  .desc {
+    display: none;
+  }
 }
+

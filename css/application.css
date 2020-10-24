@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lobster&family=Trispace:wght@300&display=swap");
 body {
   width: 100%;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
@@ -20,15 +21,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 8vw;
-  position: fixed;
-  left: 0;
-  right: 0;
+  padding: 1.5rem;
 }
 
 .header__logo {
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
+}
+
+.header__title {
+  font-family: 'Arvo', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Trispace', sans-serif;
 }
 
 .humberger {
@@ -59,6 +63,9 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__child {
     font-size: 1.2rem;
@@ -77,20 +84,23 @@ header {
 /* --------------------------------------------- */
 /* トップ */
 /* --------------------------------------------- */
+main {
+  width: 100%;
+}
+
 .top {
   position: relative;
   width: 100%;
 }
 
-.top__bg {
+.bg-wrapper {
   width: 100%;
-  background-image: url(../img/top.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 40rem;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  height: 30rem;
   color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/top.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .top__title-wrapper {
@@ -118,10 +128,6 @@ header {
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
-@media (min-width: 768px) {
-  font-size: 2.5rem;
-}
-
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
@@ -137,10 +143,136 @@ header {
 /* --------------------------------------------- */
 /* WHAT IS "TECHMEETS"? */
 /* --------------------------------------------- */
+.what {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ED7133;
+  padding-top: 2rem;
+}
+
+.what__title {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+.what__img {
+  width: 18rem;
+}
+
+.what__lead-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+}
+
+.what__line-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what__d-line {
+  background-image: linear-gradient(45deg, transparent 44%, #333 44%, #333 48%, transparent 48%);
+  width: 10px;
+  height: 27px;
+}
+
+.what__h-line {
+  left: 5%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39%, transparent), color-stop(39%, #333), color-stop(41%, #333), color-stop(41%, transparent));
+  background-image: linear-gradient(180deg, transparent 39%, #333 39%, #333 41%, transparent 41%);
+  width: 30px;
+  height: 50px;
+}
+
+.what__lead-text {
+  width: 15rem;
+  line-height: 1.2rem;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.what__content {
+  padding: 2rem 2.5rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+}
+
+.what__content_PC {
+  display: none;
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: black;
+}
+
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
+@media (min-width: 1024px) {
+  .what {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .what__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .what__first-block {
+    width: 30rem;
+    padding-bottom: 5rem;
+  }
+  .what__lead-text {
+    width: 25rem;
+  }
+  .what__content {
+    display: none;
+  }
+  .what__content_PC {
+    display: block;
+    padding: 0.3rem 3rem;
+    width: 25rem;
+  }
+  .what__img {
+    width: 350px;
+  }
+  .desc {
+    display: none;
+  }
+}
 /*# sourceMappingURL=application.css.map */

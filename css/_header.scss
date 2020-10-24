@@ -3,25 +3,45 @@
 /* ヘッダー */
 
 /* --------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lobster&family=Trispace:wght@300&display=swap');
 
 header {
-  // width: 100vw;
+  // width: 100%;
   z-index: 1;
   color: $pale-letter;
   display: flex;
   justify-content: space-between;
   align-items: center;
   // background-color: blue;
-  padding: 1.5rem 8vw;
-  position: fixed;
-  left: 0;
-  right: 0;
+  padding: 1.5rem;
+  // position: absolute;
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  // -webkit-transform: translateY(0);
+  // transform: translateY(0);
+  // -webkit-transition: -webkit-transform .4s ease;
+  // transition: -webkit-transform .4s ease;
+  // transition: transform .4s ease;
+  // transition: transform .4s ease, -webkit-transform .4s ease;
 }
+
+// header--unpinned {
+//   -webkit-transform: translateY(-150%);
+//   transform: translateY(-150%);
+// }
 
 .header__logo {
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
   // padding: 1rem
+  
+}
+
+.header__title {
+  font-family: 'Arvo', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Trispace', sans-serif;
 }
 
 
@@ -52,6 +72,8 @@ header {
     &_pc {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      // margin-left5: auto;
     }
   }
 
