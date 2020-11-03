@@ -232,6 +232,50 @@ main {
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
+@media (min-width: 768px) {
+  .what {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .what__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .what__first-block {
+    width: 30rem;
+    padding-bottom: 5rem;
+  }
+  .what__lead-text {
+    width: 25rem;
+    font-size: 1.2rem;
+  }
+  .what__content {
+    display: none;
+  }
+  .what__content_PC {
+    display: block;
+    padding: 0.3rem 3rem;
+    width: 25rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .what__img {
+    width: 200px;
+  }
+  .desc {
+    display: none;
+  }
+}
+
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
@@ -276,6 +320,113 @@ main {
   }
   .desc {
     display: none;
+  }
+}
+
+/* --------------------------------------------- */
+/* ABOUT */
+/* --------------------------------------------- */
+.about {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.about__title {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about__desc {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article__contents {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__img {
+  width: 9rem;
+  margin-top: 2rem;
+}
+
+.article__title {
+  width: 9rem;
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.article__sentence {
+  width: 9rem;
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+  .article__img {
+    width: 18rem;
+  }
+  .article__title {
+    width: 18rem;
+  }
+  .article__sentence {
+    width: 18rem;
+  }
+}
+
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  .about__title {
+    font-size: 3rem;
+    margin-top: 7rem;
+  }
+  .about__desc {
+    margin-top: 2rem;
+  }
+  .article {
+    padding: 0 15rem;
+  }
+  .article__img {
+    margin-top: 4rem;
+  }
+  .article__title {
+    font-size: 1rem;
+  }
+  .article__contents {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 33%;
+            flex: 0 33%;
   }
 }
 /*# sourceMappingURL=application.css.map */

@@ -80,6 +80,57 @@ background-color: black;}
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
 @media (min-width: 768px) {
+  .what {
+    width: 100%;
+    // padding: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+  .what__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .what__first-block {
+    width: 30rem;
+    padding-bottom: 5rem;
+    // vertical-align: top;
+    // display: flex;
+    // flex-direction: row;
+    // align-self: flex-start;
+    // margin-right: auto;
+  } 
+
+
+  // .what__lead-wrapper {
+  //  }
+
+  .what__lead-text {
+    width: 25rem;
+    font-size: 1.2rem;
+  }
+
+  .what__content{
+    display: none;
+    &_PC{
+      display: block;
+      padding: 0.3rem 3rem;
+      width: 25rem;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  .what__img {
+    width: 200px;
+  }
+
+  .desc {
+    display: none;
+  }
   
 }
 /* ------------------------------------ */
