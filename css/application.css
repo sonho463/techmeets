@@ -330,6 +330,7 @@ main {
   width: 100%;
   text-align: center;
   display: inline-block;
+  margin-bottom: 4rem;
 }
 
 .about__title {
@@ -430,7 +431,7 @@ main {
   }
 }
 
-/* --------------------------------------------- */
+/* rem--------------------------------------------- */
 /* 無料相談会はこちら */
 /* --------------------------------------------- */
 .consultation {
@@ -473,12 +474,24 @@ main {
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
+@media (min-width: 768px) {
+  .etc {
+    display: none;
+  }
+  .consultation__text {
+    text-align: center;
+  }
+}
+
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media (min-width: 1024px) {
   .etc {
     display: none;
+  }
+  .consultation__text {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=application.css.map */
