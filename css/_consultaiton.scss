@@ -1,0 +1,59 @@
+/* --------------------------------------------- */
+
+/* 無料相談会はこちら */
+
+/* --------------------------------------------- */
+
+.consultation {
+	position: relative;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),url(../img/top.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+.consultation__wrapper {
+	color: $pale-letter;
+	text-align: center;
+	padding: 3rem 2rem;
+}
+
+.consultation__text {
+	text-align: left;
+	line-height: 2rem;
+	font-size: larger;
+}
+
+.consultation__button {
+	background-color: $main-color;
+	padding: 0.8rem 2.5rem;
+	margin-top: 1.5rem;
+	color: $pale-letter;
+}
+.etc {
+	margin-top: 1.5rem;
+	& a {
+		text-decoration: none;
+		color: $pale-letter;
+		border-bottom: 1px solid $pale-letter;
+	}
+}
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+  
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  .etc {
+		display: none;
+	}
+}

@@ -429,4 +429,56 @@ main {
             flex: 0 33%;
   }
 }
+
+/* --------------------------------------------- */
+/* 無料相談会はこちら */
+/* --------------------------------------------- */
+.consultation {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/top.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.consultation__wrapper {
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.consultation__text {
+  text-align: left;
+  line-height: 2rem;
+  font-size: larger;
+}
+
+.consultation__button {
+  background-color: #ED7133;
+  padding: 0.8rem 2.5rem;
+  margin-top: 1.5rem;
+  color: #ffffff;
+}
+
+.etc {
+  margin-top: 1.5rem;
+}
+
+.etc a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  .etc {
+    display: none;
+  }
+}
 /*# sourceMappingURL=application.css.map */

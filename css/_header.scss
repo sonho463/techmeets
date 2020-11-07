@@ -12,24 +12,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: blue;
   padding: 1.5rem;
-  // position: absolute;
-  // position: fixed;
-  // left: 0;
-  // right: 0;
-  // -webkit-transform: translateY(0);
-  // transform: translateY(0);
-  // -webkit-transition: -webkit-transform .4s ease;
-  // transition: -webkit-transform .4s ease;
-  // transition: transform .4s ease;
-  // transition: transform .4s ease, -webkit-transform .4s ease;
+ 
 }
 
-// header--unpinned {
-//   -webkit-transform: translateY(-150%);
-//   transform: translateY(-150%);
-// }
 
 .header__logo {
   font-size: 1.5rem;
