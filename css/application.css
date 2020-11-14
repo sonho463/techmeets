@@ -29,21 +29,85 @@ header {
   letter-spacing: -0.1rem;
 }
 
-.header__title {
-  font-family: 'Arvo', serif;
-  font-family: 'Lobster', cursive;
-  font-family: 'Trispace', sans-serif;
-}
-
-.humberger {
-  font-size: 2.5rem;
-  background-color: #ED7133;
-  padding: 1rem;
-  border-radius: 50%;
-}
-
 .header__wrapper-right_pc {
   display: none;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.menu-icon > span {
+  width: 42px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 11px;
+  margin-left: auto;
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu-icon > span:last-child {
+  margin-bottom: 0;
+}
+
+.menu-icon > .menu-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  visibility: hidden;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #ED7133;
+  font-size: 1rem;
+  line-height: 40px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.menu-icon-open > span:nth-child(1) {
+  -webkit-transition-delay: 70ms;
+          transition-delay: 70ms;
+  -webkit-transform: translateY(11px) rotate(135deg);
+          transform: translateY(11px) rotate(135deg);
+}
+
+.menu-icon-open > span:nth-child(2) {
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+  -webkit-transform: translateY(-18px) scaleX(0);
+          transform: translateY(-18px) scaleX(0);
+}
+
+.menu-icon-open > span:nth-child(3) {
+  -webkit-transition-delay: 140ms;
+          transition-delay: 140ms;
+  -webkit-transform: translateY(-11px) rotate(-135deg);
+          transform: translateY(-11px) rotate(-135deg);
+}
+
+.menu-icon-open > .menu-list {
+  -webkit-animation: show 1s linear 0s;
+          animation: show 1s linear 0s;
+  position: fixed;
+  z-index: -1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
+
+.menu-icon-open header {
+  background-color: pink;
 }
 
 /* -------------------------------------------- */
