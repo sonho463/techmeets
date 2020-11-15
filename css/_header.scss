@@ -35,6 +35,9 @@ header {
 	padding: 20px;
 	text-align: right;
 	z-index: 1000;
+	&:hover {
+		cursor: pointer;
+	}
 
 	& > span {
 		width: 42px;
@@ -70,10 +73,9 @@ header {
 		height: 100vh;
 		text-align: center;
 		// padding: 20px;
+		}
 	}
 
-
-}
 
 
 
