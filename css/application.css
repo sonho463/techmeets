@@ -476,6 +476,9 @@ main {
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media (min-width: 1024px) {
+  .menu-icon {
+    display: none;
+  }
   .about__title {
     font-size: 3rem;
     margin-top: 7rem;
@@ -626,7 +629,7 @@ main {
 }
 
 .news__article {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
 }
 
 .container {
@@ -673,7 +676,98 @@ main {
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
+@media (min-width: 768px) {
+  .news__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news__article {
+    width: 40%;
+  }
+  .article__image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
+@media (min-width: 1024px) {
+  .news__article {
+    width: 40%;
+  }
+}
+
+/* --------------------------------------------- */
+/* フッター */
+/* --------------------------------------------- */
+.footer-pc {
+  display: none;
+}
+
+.footer-sp {
+  color: #ffffff;
+  background-color: #000;
+  text-align: center;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5rem;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+  .footer-sp {
+    display: none;
+  }
+  .footer-pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #ffffff;
+    height: 500px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/footer.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/footer.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    padding: 2rem 5rem;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__menu > li {
+    margin-right: 1rem;
+  }
+  .footer__menu > a:hover, .footer__menu a:active, .footer__menu a:visited, .footer__menu a:link {
+    color: #ffffff;
+  }
+}
 /*# sourceMappingURL=application.css.map */
