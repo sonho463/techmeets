@@ -1,8 +1,13 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url('../NerkoOne-Regular.ttf') format('truetype');
+}
+
 @import "main";
 @import "header";
 @import "top";
 @import "what";
 @import "about";
-@import "consultaiton";
+@import "consultation";
 @import "news";
 @import "footer";

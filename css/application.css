@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lobster&family=Trispace:wght@300&display=swap");
+@font-face {
+  font-family: 'MyFont';
+  src: url("../NerkoOne-Regular.ttf") format("truetype");
+}
+
 body {
   width: 100%;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
@@ -27,6 +32,10 @@ header {
 .header__logo {
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
+}
+
+.header__title {
+  font-family: MyFont;
 }
 
 .header__wrapper-right_pc {
@@ -82,8 +91,8 @@ header {
 .menu-icon-open > span:nth-child(1) {
   -webkit-transition-delay: 70ms;
           transition-delay: 70ms;
-  -webkit-transform: translateY(11px) rotate(135deg);
-          transform: translateY(11px) rotate(135deg);
+  -webkit-transform: translateY(14px) rotate(135deg);
+          transform: translateY(14px) rotate(135deg);
 }
 
 .menu-icon-open > span:nth-child(2) {
@@ -96,8 +105,8 @@ header {
 .menu-icon-open > span:nth-child(3) {
   -webkit-transition-delay: 140ms;
           transition-delay: 140ms;
-  -webkit-transform: translateY(-11px) rotate(-135deg);
-          transform: translateY(-11px) rotate(-135deg);
+  -webkit-transform: translateY(-14px) rotate(-135deg);
+          transform: translateY(-14px) rotate(-135deg);
 }
 
 .menu-icon-open > .menu-list {
@@ -423,9 +432,8 @@ main {
 }
 
 .article__contents {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 50%;
-          flex: 0 50%;
+  width: 35vw;
+  margin-right: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,19 +447,19 @@ main {
 }
 
 .article__img {
-  width: 9rem;
+  width: 7rem;
   margin-top: 2rem;
 }
 
 .article__title {
-  width: 9rem;
+  width: 7rem;
   margin-top: 1rem;
   text-align: left;
   line-height: 1.5rem;
 }
 
 .article__sentence {
-  width: 9rem;
+  width: 7rem;
   margin-top: 1rem;
   text-align: left;
   line-height: 1.2rem;
@@ -486,9 +494,6 @@ main {
   .about__desc {
     margin-top: 2rem;
   }
-  .article {
-    padding: 0 15rem;
-  }
   .article__img {
     margin-top: 4rem;
   }
@@ -496,9 +501,10 @@ main {
     font-size: 1rem;
   }
   .article__contents {
+    margin-right: 2vw;
     -webkit-box-flex: 0;
-        -ms-flex: 0 33%;
-            flex: 0 33%;
+        -ms-flex: 0 25%;
+            flex: 0 25%;
   }
 }
 
@@ -669,8 +675,9 @@ main {
       -ms-flex: 2;
           flex: 2;
   margin-left: 1rem;
-  line-height: 2rem;
-  font-size: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
 }
 
 /* -------------------------------------------- */
@@ -693,6 +700,10 @@ main {
   .article__image {
     width: 120px;
     height: 120px;
+  }
+  .article__text {
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 }
 

@@ -90,8 +90,9 @@
 .article__text {
 	flex: 2;
 	margin-left: 1rem;
-	line-height: 2rem;
-	font-size: 1rem;
+	line-height: 1.5rem;
+	font-size: 0.8rem;
+	padding-top: 0.3rem;
 }
 
 
@@ -114,6 +115,11 @@
 		width: 120px;
 		height: 120px;
 		}
+
+	.article__text {
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
 
 
 

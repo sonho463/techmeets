@@ -21,7 +21,10 @@ header {
   font-size: 1.5rem;
   letter-spacing: -0.1rem;
   // padding: 1rem
+}
 
+.header__title {
+	font-family: MyFont;
 }
 
 
@@ -84,7 +87,7 @@ header {
 	& > span {
 		&:nth-child(1) {
 			transition-delay: 70ms;
-			transform: translateY(11px) rotate(135deg);
+			transform: translateY(14px) rotate(135deg);
 		}
 		&:nth-child(2) {
 			transition-delay: 0ms;
@@ -92,7 +95,7 @@ header {
 		}
 		&:nth-child(3) {
 			transition-delay: 140ms;
-			transform: translateY(-11px) rotate(-135deg);
+			transform: translateY(-14px) rotate(-135deg);
 		}
 
 	}
